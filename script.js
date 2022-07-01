@@ -73,12 +73,12 @@ const updateTotalPrice = () => {
         document.getElementById('subtotal').innerHTML = dressUpPrice(totalPrice);
         document.getElementById('total').innerHTML = dressUpPrice(totalPrice + restaurant.deliveryPrice);
         document.getElementById('delivery-price-container').classList.remove('hide');
-        document.getElementById('basket-responsive-span').innerHTML = 'Warenkorb (' + dressUpPrice(totalPrice + restaurant.deliveryPrice) + ')';
+        document.getElementById('basket-responsive-span').innerHTML = 'Add to Cart (' + dressUpPrice(totalPrice + restaurant.deliveryPrice) + ')';
     } else {
         document.getElementById('delivery-price-container').classList.add('hide');
         document.getElementById('subtotal').innerHTML = dressUpPrice(0);
         document.getElementById('total').innerHTML = dressUpPrice(0);
-        document.getElementById('basket-responsive-span').innerHTML = 'Warenkorb (' + dressUpPrice(0) + ')';
+        document.getElementById('basket-responsive-span').innerHTML = 'Add to Cart (' + dressUpPrice(0) + ')';
     };
 
     /**Make order button available if minimum order price is reached */
